@@ -1,0 +1,65 @@
+.clear {
+    background-image: url(clear.jpg);
+}
+
+.clouds {
+    background-image: url(clouds.jpg);
+}
+
+.rain {
+    background-image: url(rain.jpg);
+}
+
+.snow {
+    background-image: url(snow.jpg);
+}
+
+body {
+    font-family: 'Trebuchet MS';
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0, 0.5);
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 3em;
+    position: relative;
+
+}
+
+.wi {
+    font-size: 5em;
+    line-height: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+.tooltip {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    color: #fff;
+    background-color: #222;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 12px;
+}
+
+h1:hover .tooltip {
+    top: -50px;
+    left: 65px;
+    opacity: 1;
+    transition: opacity .3s, top .5s;
+}
